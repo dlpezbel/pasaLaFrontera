@@ -26,7 +26,7 @@ public class PasaLaFronteraStreamHandler extends SkillStreamHandler {
             new EsLaLetraRequestHandler(),
             new PalabraPasaLaFronteraRequestHandler()
         )
-        .withSkillId("skill Id")
+        .withSkillId("amzn1.ask.skill.963d7e4d-33d6-4a7b-b007-5ded85a7297a")
         .build();
   }
 
