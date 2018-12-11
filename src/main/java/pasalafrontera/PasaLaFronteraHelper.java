@@ -26,8 +26,9 @@ public class PasaLaFronteraHelper {
           "organizacion", "nuevas", "calidad");
 
   public static String getInitialWord(String letra) {
-    Collections.shuffle(PALABRAS_INITIAL_LIST);
-    String initialWord = PALABRAS_INITIAL_LIST.stream().filter(wordContainsLeter).findFirst();
+    Collections.shuffle(WORDS_INITIAL_LIST);
+    String initialWord = String.valueOf(
+        WORDS_INITIAL_LIST.stream().filter(str -> !wordContainsLeter(letra,str)).findFirst());
     return initialWord;
   }
 
